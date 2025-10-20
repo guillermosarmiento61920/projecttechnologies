@@ -1,0 +1,31 @@
+* {
+  font-family: "Roboto Slab", serif;
+}
+
+/* listas sin decoracion y en color negro */
+ul {
+  li {
+    a {
+      text-decoration: none;
+      color: black;
+    }
+
+    list-style: none;
+  }
+}
+
+a {
+  color: black;
+}
+
+// para colocacion en centro de cosas
+.ubicCentro {
+  @extend %ubicCentroext;
+}
+
+// animacion de productos en index y productos  --------- de otro proyecto
+.zoomImg:hover {
+  -webkit-animation: scale-up-center 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+    both;
+  animation: scale-up-center 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}

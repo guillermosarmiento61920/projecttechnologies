@@ -1,0 +1,24 @@
+//copiado de otro proyecto
+
+//para que desaparezca la barra de busqueda y aparezca en el offcanvas
+.formDesktop {
+  display: none;
+}
+
+/* MOBILE (320px a 768px  */
+@media screen and (max-width: 768px) {
+  // para colocar en vista mobile
+  .formDesktop {
+    display: block;
+  }
+
+  // para sacar vista en mobile
+  .formMobile {
+    display: none;
+  }
+
+  iframe {
+    height: auto;
+    width: 100%;
+  }
+}

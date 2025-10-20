@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW:wght@100..400&display=swap");
+
+.ubicCentroIntro {
+  @extend %ubicCentroext;
+  display: block;
+
+  h1 {
+    font-family: "Playwrite AU NSW", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: $textH1;
+  }
+
+  h3 {
+    font-style: italic;
+  }
+}
+
+p {
+  margin: 10px;
+  @include indentMio(20px, 20px);
+  text-align: justify;
+}
+
+.carouselCentered {
+  @extend %ubicCentroext;
+  max-width: 25%;
+  margin: 0 auto;
+  border: 1px solid $fondoNav;
+
+  div {
+    h5 {
+      color: $successTextColor;
+      font-weight: bolder;
+    }
+    p {
+      color: $successTextColor;
+    }
+  }
+}

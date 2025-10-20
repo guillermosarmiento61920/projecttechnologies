@@ -1,0 +1,5 @@
+footer {
+  margin-top: $marginSections;
+  background-color: $colorFondo;
+  @extend %ubicCentroext;
+}

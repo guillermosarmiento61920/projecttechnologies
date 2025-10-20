@@ -1,0 +1,9 @@
+h1 {
+    color: blue;
+    font-size: 2em;
+}
+
+p.hoverMio:hover {
+    background-color: red;
+    box-shadow: 12px 12px 5px rgba(69, 68, 68, 0.5);
+}

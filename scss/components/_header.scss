@@ -1,0 +1,19 @@
+nav {
+  background-color: $colorFondo;
+  margin-bottom: $marginSections;
+
+  ul.navList {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 0px;
+    list-style: none;
+    li {
+      a.hoverMio:hover {
+        box-shadow: 5px 5px 5px rgba(69, 68, 68, 0.5);
+        border: 1px solid $fondoNav;
+      }
+    }
+  }
+}

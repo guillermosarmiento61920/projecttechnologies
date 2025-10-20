@@ -1,0 +1,5 @@
+// espaciado para texto en general
+@mixin indentMio($marginL, $marginR) {
+  margin-left: $marginL;
+  margin-right: $marginR;
+}
