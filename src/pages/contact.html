@@ -16,54 +16,334 @@
   <body>
     <header>
       <nav>
-        <ul class="navList">
-          <li>
-            <a href="../../index.html" class="hoverMio">Inicio</a>
-          </li>
-          <li>
-            <a href="./mascotas.html" class="hoverMio">Mascotas en adopcion</a>
-          </li>
-          <li>
-            <a href="./success.html" class="hoverMio">Casos de Exito</a>
-          </li>
-          <li>
-            <a href="./aboutUs.html" class="hoverMio">Nosotros</a>
-          </li>
-          <li>
-            <a href="./contact.html" class="hoverMio">Contactanos</a>
-          </li>
-        </ul>
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-lg-8">
+              <ul class="navList">
+                <li>
+                  <a href="/index.html" class="hoverMio">Inicio</a>
+                </li>
+                <li>
+                  <a href="/src/pages/mascotas.html" class="hoverMio"
+                    >Mascotas en adopcion</a
+                  >
+                </li>
+                <li>
+                  <a href="/src/pages/success.html" class="hoverMio"
+                    >Casos de Exito</a
+                  >
+                </li>
+                <li>
+                  <a href="/src/pages/aboutUs.html" class="hoverMio"
+                    >Nosotros</a
+                  >
+                </li>
+                <li>
+                  <a href="/src/pages/contact.html" class="hoverMio"
+                    >Contactanos</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- redes soc -->
+            <div class="col-lg-4 text-center text-lg-right">
+              <div class="d-inline-flex align-items-center">
+                <a class="text-white px-3" href=""
+                  >face
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="text-white px-3" href=""
+                  >insta
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="text-white px-3" href=""
+                  >X
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </nav>
     </header>
 
     <main>
-      <h2>aqui va el contacto</h2>
-      <p>asdf</p>
+      <section>
+        <div>
+          <h2>Agenda una visita</h2>
+          <p>*horarios disponibles*</p>
+          <!-- Calendar Container -->
+          <div class="calendar">
+            <!-- Month and Year Header -->
+            <div class="calendar-header">November 2024</div>
 
-      <div class="ubicCentro col-6">
-        <iframe
-          class="ubicCentro"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113927.36693772767!2d-65.3702505689896!3d-26.83262905688825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94223792d6c56903%3A0xf88d5b92b5c56527!2sSan%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1754879109978!5m2!1ses!2sar"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-        <ul>
-          <li>calle</li>
-          <li>cp4000</li>
-          <li>telefono</li>
-          <li>facebook</li>
-        </ul>
-      </div>
+            <!-- Days of the Week -->
+            <div class="calendar-days">
+              <div>Sun</div>
+              <div>Mon</div>
+              <div>Tue</div>
+              <div>Wed</div>
+              <div>Thu</div>
+              <div>Fri</div>
+              <div>Sat</div>
+            </div>
 
-      <a href="../../index.html">Volver</a>
+            <!-- Calendar Dates -->
+            <div class="calendar-dates">
+              <!-- Blank spaces for days before the month starts on Friday -->
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div class="today">1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>4</div>
+              <div>5</div>
+              <div>6</div>
+              <div>7</div>
+              <div>8</div>
+              <div>9</div>
+              <div>10</div>
+              <div>11</div>
+              <div>12</div>
+              <div>13</div>
+              <div>14</div>
+              <div>15</div>
+              <div>16</div>
+              <div>17</div>
+              <div>18</div>
+              <div>19</div>
+              <div>20</div>
+              <div>21</div>
+              <div>22</div>
+              <div>23</div>
+              <div>24</div>
+              <div>25</div>
+              <div>26</div>
+              <div>27</div>
+              <div>28</div>
+              <div>29</div>
+              <div>30</div>
+            </div>
+          </div>
+        </div>
+        <form action="">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control border-0"
+              placeholder="Nombre completo"
+              required="required"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control border-0"
+              placeholder="Correo electronico"
+              required="required"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control border-0"
+              placeholder="Nombre mascota de interes"
+            />
+          </div>
+          <div>
+            <button
+              class="btn btn-lg btn-primary btn-block border-0"
+              type="submit"
+            >
+              Submit Now
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section>
+        <h2>Nuestra informacion</h2>
+        <div class="container">
+          <div
+            class="d-flex justify-content-between align-items-center flex-wrap"
+          >
+            <div
+              class="d-inline-flex flex-column text-center pr-3 border-right"
+            >
+              <h6>Horario de apertura</h6>
+              <p class="m-0">8.00AM - 9.00PM</p>
+            </div>
+            <div
+              class="d-inline-flex flex-column text-center px-3 border-right"
+            >
+              <h6>Email de contacto</h6>
+              <p class="m-0">info@nuevoscomienzos.com</p>
+            </div>
+            <div class="d-inline-flex flex-column text-center pl-3">
+              <h6>Telefono de contacto</h6>
+              <p class="m-0">381 345 6789</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="ubicCentro col-6">
+          <iframe
+            class="ubicCentro"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113927.36693772767!2d-65.3702505689896!3d-26.83262905688825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94223792d6c56903%3A0xf88d5b92b5c56527!2sSan%20Miguel%20de%20Tucum%C3%A1n%2C%20Tucum%C3%A1n!5e0!3m2!1ses!2sar!4v1754879109978!5m2!1ses!2sar"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <ul>
+            <li>calle</li>
+            <li>cp4000</li>
+            <li>telefono</li>
+            <li>facebook</li>
+          </ul>
+        </div>
+      </section>
     </main>
 
-    <footer>
-      <p>Todos los derechos reservados &copy; - Nicolas Sarmiento 2025</p>
+    <footer class="d-block">
+      <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+          <div class="col-lg-4 col-md-12 mb-5">
+            <h1 class="mb-3 display-5 text-capitalize text-white">
+              <span class="text-primary">Nuevos</span> Comienzos
+            </h1>
+            <p class="m-0">
+              Empresa dedicada a rescatar mascotas abandonadas y brindarles un
+              nuevo hogar
+            </p>
+          </div>
+          <div class="col-lg-8 col-md-12">
+            <div class="row">
+              <div class="col-md-4 mb-5">
+                <h5 class="text-primary mb-4">Get In Touch</h5>
+                <p>
+                  <i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York,
+                  USA
+                </p>
+                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+                <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                <div class="d-flex justify-content-start mt-4">
+                  <a
+                    class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                    style="width: 36px; height: 36px"
+                    href="#"
+                    >x<i class="fab fa-twitter"></i
+                  ></a>
+                  <a
+                    class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                    style="width: 36px; height: 36px"
+                    href="#"
+                    >fb<i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a
+                    class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                    style="width: 36px; height: 36px"
+                    href="#"
+                    >li<i class="fab fa-linkedin-in"></i
+                  ></a>
+                  <a
+                    class="btn btn-outline-light rounded-circle text-center mr-2 px-0"
+                    style="width: 36px; height: 36px"
+                    href="#"
+                    >ig<i class="fab fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="col-md-4 mb-5">
+                <h5 class="text-primary mb-4">Popular Links</h5>
+                <div class="d-flex flex-column justify-content-start">
+                  <a class="text-white mb-2" href="#"
+                    ><i class="fa fa-angle-right mr-2"></i>Home</a
+                  >
+                  <a class="text-white mb-2" href="#"
+                    ><i class="fa fa-angle-right mr-2"></i>About Us</a
+                  >
+                  <a class="text-white mb-2" href="#"
+                    ><i class="fa fa-angle-right mr-2"></i>Our Services</a
+                  >
+                  <a class="text-white mb-2" href="#"
+                    ><i class="fa fa-angle-right mr-2"></i>Our Team</a
+                  >
+                  <a class="text-white" href="#"
+                    ><i class="fa fa-angle-right mr-2"></i>Contact Us</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-4 mb-5">
+                <h5 class="text-primary mb-4">Newsletter</h5>
+                <form action="">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control border-0"
+                      placeholder="Your Name"
+                      required="required"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control border-0"
+                      placeholder="Your Email"
+                      required="required"
+                    />
+                  </div>
+                  <div>
+                    <button
+                      class="btn btn-lg btn-primary btn-block border-0"
+                      type="submit"
+                    >
+                      Submit Now
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="container-fluid text-white py-4 px-sm-3 px-md-5"
+        style="background: #111111"
+      >
+        <div class="row">
+          <div class="col-md-6 text-center text-md-left mb-3 mb-md-0">
+            <p class="m-0 text-white">
+              <a class="text-white font-weight-bold" href="#"
+                >Nuevos Comienzos</a
+              >. Todos los derechos reservados &copy; - Nicolas Sarmiento 2025
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-right">
+            <ul class="nav d-inline-flex">
+              <li class="nav-item">
+                <a class="nav-link text-white py-0" href="#">Privacy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white py-0" href="#">Terms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white py-0" href="#">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white py-0" href="#">Help</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <script
